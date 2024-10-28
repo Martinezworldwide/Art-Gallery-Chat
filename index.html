@@ -3,49 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Gallery Chat - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Art Gallery Chat</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f9f4ef;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #8b4513;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px #aaa;
+        }
+        p {
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .button {
+            width: 250px;
+            margin: 8px 0;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 2px 2px 5px #999;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        .button-description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .nav-button {
+            margin-top: 30px;
+            padding: 15px 25px;
+            background-color: #8b4513;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px #666;
+            transition: all 0.3s ease;
+        }
+        .nav-button:hover {
+            background-color: #6b3d2c;
+            transform: scale(1.08);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Art Gallery Chat</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="forums.html">Forums</a></li>
-                </ul>
-            </nav>
+    <h1>Art Gallery Chat</h1>
+    <p>Welcome to Art Gallery Chat, your one-stop platform for art resources, photography gear, and creative inspiration!</p>
+
+    <div class="button-container">
+        <!-- Button with Description -->
+        <div>
+            <p class="button-description">Explore used cameras and gear at great prices.</p>
+            <a href="https://keh.com" class="button">KEH</a>
         </div>
-    </header>
+        <div>
+            <p class="button-description">Find Kodak's latest products, from film to digital solutions.</p>
+            <a href="https://www.kodak.com" class="button">Kodak</a>
+        </div>
+        <div>
+            <p class="button-description">Create personalized photo books for your memories.</p>
+            <a href="https://www.photobook.com" class="button">Photobook</a>
+        </div>
+        <div>
+            <p class="button-description">High-quality home security cameras from Reolink.</p>
+            <a href="https://reolink.com" class="button">Reolink</a>
+        </div>
+        <div>
+            <p class="button-description">Albelli NL: Design custom photo gifts and wall art.</p>
+            <a href="https://www.albelli.nl" class="button">Albelli NL</a>
+        </div>
+        <div>
+            <p class="button-description">Explore cameras and accessories from Olympus.</p>
+            <a href="https://www.olympus.com" class="button">Olympus</a>
+        </div>
+        <div>
+            <p class="button-description">Affordable canvas prints for your favorite photos.</p>
+            <a href="https://www.canvasdiscount.com" class="button">Canvas Discount</a>
+        </div>
+        <!-- Add more buttons with descriptions as needed -->
 
-    <main>
-        <!-- Hero Section with Image and Animation -->
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Discover Art & Engage Creatively</h2>
-                <p>Join a community of artists and art enthusiasts. Dive into commissions, connect, and be inspired.</p>
-                <a href="#commissions" class="button">Explore Commissions</a>
-            </div>
-        </section>
-
-        <!-- Commissions Section -->
-        <section id="commissions" class="commissions">
-            <h2>Commissions</h2>
-            <div class="commission-links">
-                <a href="https://example.com/commission1" target="_blank" class="commission-button">Commission 1</a>
-                <a href="https://example.com/commission2" target="_blank" class="commission-button">Commission 2</a>
-                <a href="https://example.com/commission3" target="_blank" class="commission-button">Commission 3</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Art Gallery Chat. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+        <!-- Navigation Button to Forums Page -->
+        <a href="forums.html" class="nav-button">Go to Forums</a>
+    </div>
 </body>
 </html>
 
