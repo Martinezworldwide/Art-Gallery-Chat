@@ -8,23 +8,31 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Art Gallery Chat</h1>
-        <nav>
-            <ul>
-                <li><a href="forums.html">Go to Forums</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Art Gallery Chat</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="forums.html">Forums</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="commissions">
+        <section class="hero">
+            <h2>Discover Art & Engage with Creators</h2>
+            <p>Welcome to Art Gallery Chat, where art meets conversation. Explore commissions and connect with like-minded creators.</p>
+            <a href="#commissions" class="button">View Commissions</a>
+        </section>
+
+        <section id="commissions" class="commissions">
             <h2>Commissions</h2>
-            <p>Explore our commission opportunities for artists:</p>
-            <ul>
-                <li><a href="https://example.com/commission1" target="_blank">Commission 1</a></li>
-                <li><a href="https://example.com/commission2" target="_blank">Commission 2</a></li>
-                <li><a href="https://example.com/commission3" target="_blank">Commission 3</a></li>
-            </ul>
+            <div class="commission-links">
+                <a href="https://example.com/commission1" target="_blank" class="commission-button">Commission 1</a>
+                <a href="https://example.com/commission2" target="_blank" class="commission-button">Commission 2</a>
+                <a href="https://example.com/commission3" target="_blank" class="commission-button">Commission 3</a>
+            </div>
         </section>
     </main>
 
@@ -35,3 +43,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
