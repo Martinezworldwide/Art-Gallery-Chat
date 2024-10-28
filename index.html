@@ -14,12 +14,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 20px;
             min-height: 100vh;
         }
         h1 {
             color: #d0e1f9;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             text-shadow: 1px 1px 2px #0f1e3a;
+            text-align: center;
         }
         p {
             max-width: 600px;
@@ -28,14 +30,21 @@
             font-size: 18px;
             color: #b0c7e1;
         }
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .partners-description {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #a0b9d9;
+            text-align: center;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 30px;
         }
         .button {
-            width: 250px;
-            margin: 8px 0;
             padding: 12px 20px;
             font-size: 16px;
             color: white;
@@ -52,14 +61,7 @@
             background-color: #203b65;
             transform: scale(1.05);
         }
-        .button-description {
-            font-size: 14px;
-            color: #a0b9d9;
-            margin-bottom: 10px;
-            text-align: center;
-        }
         .nav-button {
-            margin-top: 30px;
             padding: 15px 25px;
             background-color: #112b44;
             color: white;
@@ -69,6 +71,8 @@
             text-decoration: none;
             box-shadow: 3px 3px 6px #222;
             transition: all 0.3s ease;
+            cursor: pointer;
+            margin-top: 20px;
         }
         .nav-button:hover {
             background-color: #0e243b;
@@ -80,41 +84,20 @@
     <h1>Art Gallery Chat</h1>
     <p>Welcome to Art Gallery Chat, your one-stop platform for art resources, photography gear, and creative inspiration!</p>
 
-    <div class="button-container">
-        <!-- Button with Description -->
-        <div>
-            <p class="button-description">Explore used cameras and gear at great prices.</p>
-            <a href="https://keh.com" class="button">KEH</a>
-        </div>
-        <div>
-            <p class="button-description">Find Kodak's latest products, from film to digital solutions.</p>
-            <a href="https://www.kodak.com" class="button">Kodak</a>
-        </div>
-        <div>
-            <p class="button-description">Create personalized photo books for your memories.</p>
-            <a href="https://www.photobook.com" class="button">Photobook</a>
-        </div>
-        <div>
-            <p class="button-description">High-quality home security cameras from Reolink.</p>
-            <a href="https://reolink.com" class="button">Reolink</a>
-        </div>
-        <div>
-            <p class="button-description">Albelli NL: Design custom photo gifts and wall art.</p>
-            <a href="https://www.albelli.nl" class="button">Albelli NL</a>
-        </div>
-        <div>
-            <p class="button-description">Explore cameras and accessories from Olympus.</p>
-            <a href="https://www.olympus.com" class="button">Olympus</a>
-        </div>
-        <div>
-            <p class="button-description">Affordable canvas prints for your favorite photos.</p>
-            <a href="https://www.canvasdiscount.com" class="button">Canvas Discount</a>
-        </div>
-        <!-- Add more buttons with descriptions as needed -->
+    <p class="partners-description">Check out some of our partners:</p>
 
-        <!-- Navigation Button to Forums Page -->
-        <a href="forums.html" class="nav-button">Go to Forums</a>
+    <!-- Button Grid for Partner Links -->
+    <div class="button-grid">
+        <a href="https://keh.com" class="button">KEH</a>
+        <a href="https://www.kodak.com" class="button">Kodak</a>
+        <a href="https://www.photobook.com" class="button">Photobook</a>
+        <a href="https://reolink.com" class="button">Reolink</a>
+        <a href="https://www.albelli.nl" class="button">Albelli NL</a>
+        <a href="https://www.olympus.com" class="button">Olympus</a>
+        <a href="https://www.canvasdiscount.com" class="button">Canvas Discount</a>
     </div>
+
+    <!-- Navigation Button to Forums Page -->
+    <a href="forums.html" class="nav-button">Go to Forums</a>
 </body>
 </html>
-
