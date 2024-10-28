@@ -56,7 +56,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 6rem 2rem;
+    padding: 4rem 1rem;
     text-align: center;
     position: relative;
     animation: fadeIn 2s ease-in-out;
@@ -136,30 +136,17 @@ footer {
     padding: 1rem 0;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
 /* Iframe Container for Fullscreen View */
 .iframe-container {
     width: 100%;
-    height: calc(100vh - 100px); /* Full viewport height minus header/footer */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .iframe-container iframe {
     width: 100%;
     height: 100%;
     border: 0;
-}
-
-/* Mobile-Friendly Adjustments */
-@media only screen and (max-width: 600px) {
-    .iframe-container {
-        height: calc(100vh - 80px); /* Slightly less height for smaller screens */
-    }
 }
