@@ -44,6 +44,12 @@
             max-width: 800px;
             margin-bottom: 30px;
         }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
         .button {
             padding: 12px 20px;
             font-size: 16px;
@@ -56,10 +62,18 @@
             box-shadow: 2px 2px 5px #111;
             cursor: pointer;
             transition: all 0.3s ease;
+            margin-bottom: 8px;
+            width: 100%;
+            max-width: 200px;
         }
         .button:hover {
             background-color: #203b65;
             transform: scale(1.05);
+        }
+        .button-description {
+            font-size: 14px;
+            color: #a0b9d9;
+            margin-bottom: 15px;
         }
         .nav-button {
             padding: 15px 25px;
@@ -88,13 +102,34 @@
 
     <!-- Button Grid for Partner Links -->
     <div class="button-grid">
-        <a href="https://keh.com" class="button">KEH</a>
-        <a href="https://www.kodak.com" class="button">Kodak</a>
-        <a href="https://www.photobook.com" class="button">Photobook</a>
-        <a href="https://reolink.com" class="button">Reolink</a>
-        <a href="https://www.albelli.nl" class="button">Albelli NL</a>
-        <a href="https://www.olympus.com" class="button">Olympus</a>
-        <a href="https://www.canvasdiscount.com" class="button">Canvas Discount</a>
+        <div class="button-container">
+            <a href="https://keh.com" class="button">KEH</a>
+            <p class="button-description">Explore used cameras, lenses, and photography gear at great prices.</p>
+        </div>
+        <div class="button-container">
+            <a href="https://www.kodak.com" class="button">Kodak</a>
+            <p class="button-description">Discover Kodak's range of cameras, film, and digital imaging products.</p>
+        </div>
+        <div class="button-container">
+            <a href="https://www.photobook.com" class="button">Photobook</a>
+            <p class="button-description">Create beautiful, personalized photo books and keepsakes.</p>
+        </div>
+        <div class="button-container">
+            <a href="https://reolink.com" class="button">Reolink</a>
+            <p class="button-description">Check out Reolink's high-quality home security cameras and systems.</p>
+        </div>
+        <div class="button-container">
+            <a href="https://www.albelli.nl" class="button">Albelli NL</a>
+            <p class="button-description">Design custom photo gifts and wall art with Albelli NL.</p>
+        </div>
+        <div class="button-container">
+            <a href="https://www.olympus.com" class="button">Olympus</a>
+            <p class="button-description">Explore Olympus's cameras, lenses, and accessories.</p>
+        </div>
+        <div class="button-container">
+            <a href="https://www.canvasdiscount.com" class="button">Canvas Discount</a>
+            <p class="button-description">Get affordable canvas prints for your favorite photos.</p>
+        </div>
     </div>
 
     <!-- Navigation Button to Forums Page -->
