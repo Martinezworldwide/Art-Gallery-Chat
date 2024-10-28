@@ -3,34 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Gallery Chat - Forums</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Forums - Art Gallery Chat</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #8b4513;
+            margin: 20px 0;
+            text-shadow: 1px 1px 2px #aaa;
+            text-align: center;
+        }
+        iframe {
+            width: 95%;
+            height: 80vh;
+            border: none;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .nav-button {
+            padding: 15px 25px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px #666;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .nav-button:hover {
+            background-color: #45a049;
+            transform: scale(1.08);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1>Art Gallery Chat Forums</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="forums.html" class="active">Forums</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <h1>Art Gallery Chat Forums</h1>
+    <!-- Iframe to Wix Forums -->
+    <iframe 
+        src="https://engineeredsystems.wixsite.com/artgallerychat" 
+        title="Art Gallery Chat Forums"></iframe>
 
-    <main>
-        <section class="iframe-container">
-            <iframe 
-                src="https://engineeredsystems.wixsite.com/artgallerychat" 
-                frameborder="0" 
-                allowfullscreen>
-            </iframe>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Art Gallery Chat. All rights reserved.</p>
-    </footer>
+    <!-- Navigation Button back to the Home Page -->
+    <a href="index.html" class="nav-button">Back to Home</a>
 </body>
 </html>
+
