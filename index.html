@@ -13,13 +13,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: start;
             padding: 20px;
             min-height: 100vh;
         }
         h1 {
             color: #d0e1f9;
-            margin-bottom: 10px;
+            margin: 10px 0;
             text-shadow: 1px 1px 2px #0f1e3a;
             text-align: center;
         }
@@ -30,19 +30,57 @@
             font-size: 18px;
             color: #b0c7e1;
         }
-        .partners-description {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #a0b9d9;
-            text-align: center;
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 30px;
         }
+        .dropdown-button {
+            background-color: #254877;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px #111;
+            transition: all 0.3s ease;
+        }
+        .dropdown-button:hover {
+            background-color: #203b65;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2a4d78;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            border-radius: 8px;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            border-bottom: 1px solid #203b65;
+            transition: background-color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #203b65;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Distinct Button Style for Affiliates */
         .button-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
             width: 100%;
             max-width: 800px;
-            margin-bottom: 30px;
+            margin-top: 30px;
         }
         .button-container {
             display: flex;
@@ -54,7 +92,7 @@
             padding: 12px 20px;
             font-size: 16px;
             color: white;
-            background-color: #254877;
+            background-color: #1f3a54;
             border: none;
             border-radius: 8px;
             text-decoration: none;
@@ -67,7 +105,7 @@
             max-width: 200px;
         }
         .button:hover {
-            background-color: #203b65;
+            background-color: #1a3148;
             transform: scale(1.05);
         }
         .button-description {
@@ -75,28 +113,22 @@
             color: #a0b9d9;
             margin-bottom: 15px;
         }
-        .nav-button {
-            padding: 15px 25px;
-            background-color: #112b44;
-            color: white;
-            font-size: 18px;
-            border: none;
-            border-radius: 10px;
-            text-decoration: none;
-            box-shadow: 3px 3px 6px #222;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        .nav-button:hover {
-            background-color: #0e243b;
-            transform: scale(1.08);
-        }
     </style>
 </head>
 <body>
     <h1>Art Gallery Chat</h1>
     <p>Welcome to Art Gallery Chat, your one-stop platform for art resources, photography gear, and creative inspiration!</p>
+
+    <!-- Dropdown Menu for Main Navigation -->
+    <div class="dropdown">
+        <button class="dropdown-button">Navigation</button>
+        <div class="dropdown-content">
+            <a href="forums.html">Forums</a>
+            <a href="influence_index.html">Influence Index</a>
+            <a href="martinez_tv.html">Martinez TV Network</a>
+            <a href="martinez_events.html">Martinez Events Channel</a>
+        </div>
+    </div>
 
     <p class="partners-description">Check out some of our partners:</p>
 
@@ -131,24 +163,5 @@
             <p class="button-description">Get affordable canvas prints for your favorite photos.</p>
         </div>
     </div>
-
-    <!-- Navigation Button to Forums Page -->
-    <a href="forums.html" class="nav-button">Go to Forums</a>
-    <!-- Navigation Links to Other Pages -->
-<div class="button-grid">
-    <div class="button-container">
-        <a href="influence_index.html" class="button">Influence Index</a>
-        <p class="button-description">Explore the networking hub for artists, authors, entrepreneurs, and more.</p>
-    </div>
-    <div class="button-container">
-        <a href="martinez_tv.html" class="button">Martinez TV Network</a>
-        <p class="button-description">Learn about Martinez TV's lineup of exciting shows and channels.</p>
-    </div>
-    <div class="button-container">
-        <a href="martinez_events.html" class="button">Martinez Events Channel</a>
-        <p class="button-description">Stay updated with the latest events and broadcasts from Martinez Events.</p>
-    </div>
-</div>
-    
 </body>
 </html>
